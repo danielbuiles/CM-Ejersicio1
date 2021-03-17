@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplo 1</title>
+        <link rel="stylesheet" href="../../css//Style.css">
+    </head>
+    <body>
+        <form>
+            <div class="btn">
+                <a id="botonClick">Click</a>
+            </div>
+        </form>
+        <footer>
+            <script type="text/javascript">
+                var botonElement = document.getElementById("botonClick");
+                var contador = 0;
+                botonElement.onclick = function () {
+                    contador++;
+                    if (contador==8) 
+                    {
+                        contador=0;
+                        alert("Se reinicia el Numero!");
+                    }
+                    else
+                    {
+                        alert(contador);
+                    }
+                }
+            </script>
+        </footer>
+    </body>
+</html>

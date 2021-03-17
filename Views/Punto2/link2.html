@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css//Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select name="Seleccionar" id="jumpMenu" onchange="MM_JumpMenu('parent',this,0)">
+            <option value=""></option>
+            <option value="index.html">Link1</option>
+            <option value="Link3.html">Link3</option>
+        </select>
+    </form>
+    <footer>
+        <script type="text/javaScript">
+            function MM_JumpMenu(target,selObj,restore) 
+            {
+                eval(target+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+                if (restore) 
+                {
+                    selObj.selectedIndex(0);
+                }
+            }
+        </script>
+    </footer>
+</body>
+</html>
